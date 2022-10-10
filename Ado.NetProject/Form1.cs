@@ -16,5 +16,32 @@ namespace Ado.NetProject
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Poliklinikler go = new Poliklinikler();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Doktorlar go = new Doktorlar();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hastalar go = new Hastalar();
+            go.Show();
+            this.Hide();
+        }
     }
 }
