@@ -16,5 +16,10 @@ namespace Ado.NetProject
         {
             InitializeComponent();
         }
+
+        private void Hastalar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
