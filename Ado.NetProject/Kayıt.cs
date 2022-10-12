@@ -41,10 +41,10 @@ namespace Ado.NetProject
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "KEkle"; //İLK ÖNCE LOGİN İÇİN PROSEDUR OLUŞTUR SQL DE.
+            cmd.CommandText = "KEkle";
             cmd.Parameters.AddWithValue("KullaniciAdi", textBox1.Text);
             cmd.Parameters.AddWithValue("Sifre", textBox2.Text);
-            cmd.ExecuteNonQuery();  
+            cmd.ExecuteNonQuery();
             con.Close();
 
             Form1 GO = new Form1();
