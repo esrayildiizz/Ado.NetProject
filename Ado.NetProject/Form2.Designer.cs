@@ -33,10 +33,12 @@ namespace Ado.NetProject
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anlaşmalıKurumlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.akSigortaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insanKyanklarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.başvuruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.açıkPozisyonlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iletişimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,9 +49,6 @@ namespace Ado.NetProject
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.akSigortaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.başvuruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.açıkPozisyonlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -88,6 +87,12 @@ namespace Ado.NetProject
             this.anlaşmalıKurumlarToolStripMenuItem.Size = new System.Drawing.Size(161, 25);
             this.anlaşmalıKurumlarToolStripMenuItem.Text = "Anlaşmalı Kurumlar";
             // 
+            // akSigortaToolStripMenuItem
+            // 
+            this.akSigortaToolStripMenuItem.Name = "akSigortaToolStripMenuItem";
+            this.akSigortaToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.akSigortaToolStripMenuItem.Text = "Ak Sigorta";
+            // 
             // insanKyanklarıToolStripMenuItem
             // 
             this.insanKyanklarıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,6 +103,18 @@ namespace Ado.NetProject
             this.insanKyanklarıToolStripMenuItem.Name = "insanKyanklarıToolStripMenuItem";
             this.insanKyanklarıToolStripMenuItem.Size = new System.Drawing.Size(137, 25);
             this.insanKyanklarıToolStripMenuItem.Text = "İnsan Kaynakları";
+            // 
+            // başvuruToolStripMenuItem
+            // 
+            this.başvuruToolStripMenuItem.Name = "başvuruToolStripMenuItem";
+            this.başvuruToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.başvuruToolStripMenuItem.Text = "Başvuru";
+            // 
+            // açıkPozisyonlarToolStripMenuItem
+            // 
+            this.açıkPozisyonlarToolStripMenuItem.Name = "açıkPozisyonlarToolStripMenuItem";
+            this.açıkPozisyonlarToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.açıkPozisyonlarToolStripMenuItem.Text = "Açık Pozisyonlar";
             // 
             // iletişimToolStripMenuItem
             // 
@@ -115,23 +132,11 @@ namespace Ado.NetProject
             this.toolStripMenuItem2.Size = new System.Drawing.Size(188, 26);
             this.toolStripMenuItem2.Text = "0264 888 1 999";
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Location = new System.Drawing.Point(41, 316);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(252, 60);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ANA SAYFA";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Location = new System.Drawing.Point(521, 312);
+            this.button3.Location = new System.Drawing.Point(290, 337);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(252, 69);
             this.button3.TabIndex = 3;
@@ -231,24 +236,6 @@ namespace Ado.NetProject
             this.button4.TabIndex = 12;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // akSigortaToolStripMenuItem
-            // 
-            this.akSigortaToolStripMenuItem.Name = "akSigortaToolStripMenuItem";
-            this.akSigortaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.akSigortaToolStripMenuItem.Text = "Ak Sigorta";
-            // 
-            // başvuruToolStripMenuItem
-            // 
-            this.başvuruToolStripMenuItem.Name = "başvuruToolStripMenuItem";
-            this.başvuruToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
-            this.başvuruToolStripMenuItem.Text = "Başvuru";
-            // 
-            // açıkPozisyonlarToolStripMenuItem
-            // 
-            this.açıkPozisyonlarToolStripMenuItem.Name = "açıkPozisyonlarToolStripMenuItem";
-            this.açıkPozisyonlarToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
-            this.açıkPozisyonlarToolStripMenuItem.Text = "Açık Pozisyonlar";
-            // 
             // button5
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
@@ -298,7 +285,6 @@ namespace Ado.NetProject
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form2";
@@ -318,7 +304,6 @@ namespace Ado.NetProject
         private System.Windows.Forms.ToolStripMenuItem insanKyanklarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iletişimToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
