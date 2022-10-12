@@ -64,6 +64,8 @@ namespace Ado.NetProject
             this.label19 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,7 +173,7 @@ namespace Ado.NetProject
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label11.Location = new System.Drawing.Point(420, 405);
+            this.label11.Location = new System.Drawing.Point(420, 447);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(151, 16);
             this.label11.TabIndex = 11;
@@ -191,7 +193,7 @@ namespace Ado.NetProject
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(732, 409);
+            this.button2.Location = new System.Drawing.Point(722, 447);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 54);
             this.button2.TabIndex = 15;
@@ -201,7 +203,7 @@ namespace Ado.NetProject
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(393, 36);
+            this.dataGridView1.Location = new System.Drawing.Point(413, 84);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(365, 323);
             this.dataGridView1.TabIndex = 16;
@@ -274,7 +276,7 @@ namespace Ado.NetProject
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(591, 405);
+            this.textBox9.Location = new System.Drawing.Point(591, 447);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 26;
@@ -304,7 +306,7 @@ namespace Ado.NetProject
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(744, 393);
+            this.label16.Location = new System.Drawing.Point(729, 431);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(23, 13);
             this.label16.TabIndex = 56;
@@ -386,12 +388,36 @@ namespace Ado.NetProject
             this.label17.TabIndex = 66;
             this.label17.Text = "Listele";
             // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(633, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(67, 51);
+            this.button7.TabIndex = 67;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Location = new System.Drawing.Point(712, 15);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(66, 51);
+            this.button8.TabIndex = 68;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Doktorlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 604);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label19);
@@ -428,6 +454,7 @@ namespace Ado.NetProject
             this.Controls.Add(this.label1);
             this.Name = "Doktorlar";
             this.Text = "Doktorlar";
+            this.Load += new System.EventHandler(this.Doktorlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -470,5 +497,7 @@ namespace Ado.NetProject
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

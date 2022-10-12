@@ -43,5 +43,19 @@ namespace Ado.NetProject
             go.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e) //geri dön butonu
+        {
+            Kayıt GO = new Kayıt();
+            GO.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e) //çıkış butonu
+        {
+            Form2 GO = new Form2();
+            GO.Show();
+            this.Hide();
+        }
     }
 }

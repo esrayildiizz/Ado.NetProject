@@ -66,6 +66,8 @@ namespace Ado.NetProject
             this.label18 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,9 +216,9 @@ namespace Ado.NetProject
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(404, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(394, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(328, 243);
+            this.dataGridView1.Size = new System.Drawing.Size(359, 294);
             this.dataGridView1.TabIndex = 34;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -225,7 +227,7 @@ namespace Ado.NetProject
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label11.Location = new System.Drawing.Point(388, 343);
+            this.label11.Location = new System.Drawing.Point(401, 424);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(146, 16);
             this.label11.TabIndex = 35;
@@ -235,7 +237,7 @@ namespace Ado.NetProject
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(721, 350);
+            this.button4.Location = new System.Drawing.Point(721, 402);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(67, 54);
             this.button4.TabIndex = 38;
@@ -315,7 +317,7 @@ namespace Ado.NetProject
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(593, 339);
+            this.textBox10.Location = new System.Drawing.Point(577, 420);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 49;
@@ -348,7 +350,7 @@ namespace Ado.NetProject
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(718, 331);
+            this.label16.Location = new System.Drawing.Point(730, 388);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(23, 13);
             this.label16.TabIndex = 54;
@@ -405,12 +407,36 @@ namespace Ado.NetProject
             this.label19.TabIndex = 62;
             this.label19.Text = "Sil";
             // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(636, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(67, 51);
+            this.button7.TabIndex = 68;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Location = new System.Drawing.Point(709, 15);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(66, 51);
+            this.button8.TabIndex = 69;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Hastalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 560);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label18);
@@ -493,5 +519,7 @@ namespace Ado.NetProject
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

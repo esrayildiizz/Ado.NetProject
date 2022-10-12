@@ -118,5 +118,19 @@ namespace Ado.NetProject
         {
             Listele();
         }
+
+        private void button7_Click(object sender, EventArgs e) //geri butonu
+        {
+            Form1 GO = new Form1();
+            GO.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e) //çıkış butonu
+        {
+            Form2 GO = new Form2();
+            GO.Show();
+            this.Hide();
+        }
     }
 }
