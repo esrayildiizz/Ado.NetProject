@@ -90,6 +90,18 @@
     <Compile Include="Raporlar.Designer.cs">
       <DependentUpon>Raporlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Raporlar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar2.Designer.cs">
+      <DependentUpon>Raporlar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar3.Designer.cs">
+      <DependentUpon>Raporlar3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Doktorlar.resx">
       <DependentUpon>Doktorlar.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +131,12 @@
     </Compile>
     <EmbeddedResource Include="Raporlar.resx">
       <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar2.resx">
+      <DependentUpon>Raporlar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar3.resx">
+      <DependentUpon>Raporlar3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

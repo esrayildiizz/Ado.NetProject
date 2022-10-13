@@ -57,5 +57,26 @@ namespace Ado.NetProject
             GO.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Raporlar go=new Raporlar();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Raporlar2 go=new Raporlar2();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Raporlar3 go =new Raporlar3();
+            go.Show();
+            this.Hide();
+        }
     }
 }
