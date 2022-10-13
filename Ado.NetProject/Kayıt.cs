@@ -41,16 +41,27 @@ namespace Ado.NetProject
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "KEkle";
+            cmd.CommandText = "LGiris";
             cmd.Parameters.AddWithValue("KullaniciAdi", textBox1.Text);
             cmd.Parameters.AddWithValue("Sifre", textBox2.Text);
-            cmd.ExecuteNonQuery();
+         
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("Giriş Başarılı....");
+                Form1 GO = new Form1();//GİRİŞ YAPTIĞINDA FORM1 SAYFASINAA YÖNLENDİRİCEK.
+                GO.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adınız veya şifreniz hatalı.Lütfen tekrar deneyiniz.");
+                textBox1.Clear();
+                textBox2.Clear();
+            }
+           
             con.Close();
-
-            Form1 GO = new Form1();
-            GO.Show();
-            this.Hide();
-            //GİRİŞ YAPTIĞINDA FORM1 SAYFASINAA YÖNLENDİRİCEK.
         }
 
         private void button3_Click(object sender, EventArgs e) //kayıt ol ekranı kaydet butonu
