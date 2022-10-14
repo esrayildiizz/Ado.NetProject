@@ -55,5 +55,15 @@ namespace Ado.NetProject
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void Raporlar3_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e) 
+        {
+            
+        }
     }
 }

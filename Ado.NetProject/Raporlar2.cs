@@ -56,5 +56,36 @@ namespace Ado.NetProject
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void button3_Click(object sender, EventArgs e) //hastadoktor rapor durumu hasta sayısı
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "hastadoktor";
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void Raporlar2_Load(object sender, EventArgs e) 
+        {
+            //SqlCommand komut = new SqlCommand();
+            //komut.Connection = con;
+            //komut.CommandType = CommandType.StoredProcedure;
+            //komut.CommandText = "hastadoktor";
+
+            //SqlDataReader dr;
+
+            //con.Open();
+            //dr = komut.ExecuteReader();
+
+            //while (dr.Read())
+            //{
+            //    comboBox1.Items.Add(dr["DoktorNo"]);
+            //}
+            //con.Close();
+        }
     }
 }

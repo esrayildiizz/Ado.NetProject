@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(26, 25);
+            this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 22);
             this.label1.TabIndex = 4;
@@ -53,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(26, 124);
+            this.label2.Location = new System.Drawing.Point(415, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(326, 22);
             this.label2.TabIndex = 5;
@@ -63,9 +63,9 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(367, 7);
+            this.button1.Location = new System.Drawing.Point(342, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 61);
+            this.button1.Size = new System.Drawing.Size(52, 56);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -74,9 +74,9 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(358, 124);
+            this.button2.Location = new System.Drawing.Point(763, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 61);
+            this.button2.Size = new System.Drawing.Size(52, 48);
             this.button2.TabIndex = 7;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -126,6 +126,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Raporlar3";
             this.Text = "Poliklinik Raporlar";
+            this.Load += new System.EventHandler(this.Raporlar3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

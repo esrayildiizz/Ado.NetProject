@@ -123,9 +123,10 @@ namespace Ado.NetProject
             Listele3();
         }
 
-        private void Doktorlar_Load(object sender, EventArgs e)
+        private void Doktorlar_Load(object sender, EventArgs e) //poliklinik no kendiğinden otomatik gelsin
         {
-
+            //poliklinik no combobox olarak değiştirilip yapılablir. Textbox olduğu için her yerde duzenlenmesi gerekir.
+            //ornek olarak hastalarda var.
         }
 
         private void button7_Click(object sender, EventArgs e) //geri butonu
