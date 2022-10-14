@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(33, 53);
+            this.label1.Location = new System.Drawing.Point(32, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(347, 22);
             this.label1.TabIndex = 3;
@@ -52,18 +52,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(32, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(243, 28);
+            this.label2.Size = new System.Drawing.Size(292, 22);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Doktoların hgfhfghdf";
+            this.label2.Text = "Doktor unvanlarını alfabetik sırala:";
             // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(386, 35);
+            this.button1.Location = new System.Drawing.Point(385, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(74, 61);
             this.button1.TabIndex = 5;
@@ -74,11 +74,12 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(293, 219);
+            this.button2.Location = new System.Drawing.Point(330, 214);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(74, 61);
             this.button2.TabIndex = 6;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 

@@ -44,5 +44,17 @@ namespace Ado.NetProject
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void button2_Click(object sender, EventArgs e) //unvan sırala 
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "dunvansirala";
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
     }
 }
