@@ -42,18 +42,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(32, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(33, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 28);
+            this.label1.Size = new System.Drawing.Size(347, 22);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Doktorların";
+            this.label1.Text = "Doktorları doğum tarihine göre sıralama:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(32, 106);
+            this.label2.Location = new System.Drawing.Point(32, 232);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(243, 28);
             this.label2.TabIndex = 4;
@@ -63,17 +63,18 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(494, 11);
+            this.button1.Location = new System.Drawing.Point(386, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(74, 61);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(494, 93);
+            this.button2.Location = new System.Drawing.Point(293, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(74, 61);
             this.button2.TabIndex = 6;
