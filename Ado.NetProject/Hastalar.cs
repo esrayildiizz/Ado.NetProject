@@ -20,8 +20,23 @@ namespace Ado.NetProject
             InitializeComponent();
         }
 
-        private void Hastalar_Load(object sender, EventArgs e)
+        private void Hastalar_Load(object sender, EventArgs e) //doktor no kendiğinden seçenek olarak gelmesi için yazıldı.
         {
+            SqlCommand komut = new SqlCommand();
+            komut.Connection = con;
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.CommandText = "doktorno";
+
+            SqlDataReader dr;
+            
+            con.Open();
+            dr=komut.ExecuteReader();
+
+            while(dr.Read())
+            {
+                comboBox1.Items.Add(dr["DoktorNo"]);
+            }
+            con.Close();
 
         }
         SqlConnection con = new SqlConnection("Server=10.22.0.23;Database=M04;Integrated Security=true;");
